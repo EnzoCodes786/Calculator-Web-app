@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator
+    </title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-image: url('https://img.freepik.com/free-vector/dark-wavy-colors-background_23-2148403785.jpg?t=st=1736179804~exp=1736183404~hmac=8c839c43e96024f0f466ce72e1913d72fa557694c0cf07ad25c5185bf303de92&w=996');
+            background-size: cover;
+        }
+        
+        .container {
+            width: 400px;
+            height: 600px;
+            border-width: 2px;
+            border-style: solid;
+            border-color: black;
+            background-color: rgba(68, 71, 241, 0.63);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            margin: 2px;
+        }
+        
+        .input {
+            width: 390px;
+            height: 100px;
+            font-size: 50px;
+            text-align: right;
+            border-width: 3px;
+            border-style: solid;
+            border-color: white;
+            background-color: green;
+        }
+        
+        .input::placeholder {
+            font-size: 50px;
+            text-align: right;
+            color: black;
+        }
+        
+        .row1 {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            height: 100px;
+            background-color: darkslategrey;
+        }
+        
+        .row2 {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            height: 100px;
+            background-color: darkslategrey;
+        }
+        
+        .row3 {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            height: 100px;
+            background-color: darkslategrey;
+        }
+        
+        .row4 {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            height: 100px;
+            background-color: darkslategrey;
+        }
+        
+        .row5 {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            height: 100px;
+            background-color: darkslategrey;
+        }
+        
+        .button {
+            width: 90px;
+            height: 90px;
+            font-size: 30px;
+            border-width: 1px;
+            border-style: solid;
+            border-color: grey;
+            border-radius: 50%;
+            background-color: grey;
+            box-shadow: black 2px 2px 2px;
+        }
+        
+        .button:active {
+            background-color: #ff9900;
+            color: white;
+        }
+        
+        .op {
+            width: 90px;
+            height: 90px;
+            font-size: 30px;
+            border-width: 1px;
+            border-style: solid;
+            border-color: black;
+            border-radius: 50%;
+            background-color: #ff9900;
+            box-shadow: black 2px 2px 2px;
+        }
+        
+        .op:active {
+            background-color: white;
+            color: #ff9900;
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <div class="container">
+        <input type="text" class="input" placeholder="0">
+        <div class="row1">
+            <button class="button">7</button>
+            <button class="button">8</button>
+            <button class="button">9</button>
+            <button class="op">/</button>
+        </div>
+        <div class="row2">
+            <button class="button">4</button>
+            <button class="button">5</button>
+            <button class="button">6</button>
+            <button class="op">*</button>
+        </div>
+        <div class="row3">
+            <button class="button">1</button>
+            <button class="button">2</button>
+            <button class="button">3</button>
+            <button class="op">-</button>
+        </div>
+        <div class="row4">
+            <button class="button">0</button>
+            <button class="button">.</button>
+            <button class="op">+</button>
+            <button class="op">=</button>
+        </div>
+        <div class="row5">
+            <button class="op">C</button>
+            <button class="op">CE</button>
+            <button class="op">%</button>
+            <button class="op">00</button>
+        </div>
+    </div>
+</body>
+
+</html>
